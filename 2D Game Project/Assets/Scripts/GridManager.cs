@@ -16,6 +16,7 @@ public class GridManager : MonoBehaviour
             {
                 GameObject tileClone = Instantiate(tile, new Vector2(x + 0.5f - 5f, y + 0.5f - 5f), Quaternion.identity);
                 tileClone.name = "Tile " + tileNum;
+                tileNum++;
                 tileClone.transform.localScale = new Vector2(0.95f, 0.95f);
             }
         }
